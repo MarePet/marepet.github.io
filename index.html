@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hop na Kop</title>
+    
+    <!--===CSS===-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- 2. korak - NAVBAR-->
+    <nav class="navbar">
+        <h1 class="logo">KOP</h1>
+        <ul class="nav-links">
+            <!-- ALT + SHIFT + STR DOLE-->
+            <li class = "active"><a href="#">Početna</a></li>
+            <li><a href="#">Ture</a></li>
+            <li><a href="#">O nama</a></li>
+            <li class="ctn"><a href="#">Događaji</a></li>
+        </ul>
+        <img src="img/menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+    <!--1. korak - POZADINA, NASLOVI, DUGME --->
+       <div class="header-content">
+        <h2>Istražite Kopaonik!</h2>
+        <div class="line"></div>
+        <h1>NOVA AVANTURA VAS OČEKUJE</h1>
+        <a href="" class="ctn">Saznaj više</a>
+       </div>
+    </header>
+    
+
+    <!-- 3. korak - SEKCIJA DOGADJAJI -->
+    
+    <section class="events">
+        <div class="title">
+        <h1>Predstojeći događaji</h1>
+        <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="img/image-1.jpg" alt="">
+            <h4>Ski opening!</h4>
+            <!-- LOREM15 skracenica da odmah ispise tekst-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at veritatis aut excepturi fugiat placeat.</p>
+            <a href="" class="ctn">Saznaj više!</a>
+        </div>
+        <div class="col">
+            <img src="img/image-2.jpg" alt="">
+            <h4>Adrenalin park pušten u rad!</h4>
+            <!-- LOREM15 skracenica da odmah ispise tekst-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at veritatis aut excepturi fugiat placeat.</p>
+            <a href="" class="ctn">Saznaj više!</a>
+        </div>
+    </div>
+    </section>
+
+    <!--4. korak - SEKCIJA ISTRAZI-->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>ISTRAŽI PLANINU</h1>
+            <div class="line"></div>
+            <p id="post-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium veniam labore a possimus unde, quisquam debitis asperiores similique, nostrum quasi molestiae. Aspernatur, esse! Repellendus deserunt odio laboriosam quam nihil ipsum!</p>
+            <a href="#" class="ctn">Saznaj više!</a>
+            <p id="post-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium veniam labore a possimus unde, quisquam debitis asperiores similique, nostrum quasi molestiae. Aspernatur, esse! Repellendus deserunt odio laboriosam quam nihil ipsum!</p>
+            <a href="#" class="ctn">Saznaj više!</a>
+        </div>
+    </section>
+
+    <!-- 5. korak - TURE I DESTINACIJE-->
+
+    <section class="tours">
+        <div class="row">
+            <div class="col">
+                <h1>PREDSTOJEĆE TURE I LOKACIJE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus.</p>
+                <a href="" class="ctn">Saznaj više!</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img/image-3.jpg" alt="">
+                    <img src="img/image-4.jpg" alt="">
+                    <img src="img/image-5.jpg" alt="">
+                    <img src="img/image-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- korak 2a - KRATKA SKRIPTA KOJU DOBIJAJU-->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+</body>
+</html>
