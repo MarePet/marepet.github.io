@@ -8,10 +8,11 @@
     padding: 0;
     box-sizing: border-box;
  }
-
+html{
+    scroll-behavior: smooth;
+}
  body,html{
     overflow-x: hidden;
-
  }
 
 /* 1.korak */
@@ -146,6 +147,22 @@ ul{
         background-color: #fc036b;
         border-radius: 15px;
     }
+
+    /* 5. korak - TURE I LOKACIJE*/
+    .content-col h1{
+        font-size: 5vmin !important;
+    }
+    .content-col .line{
+        width: 80% !important;
+        margin: 0 10;
+    }
+    .content-col .ctn{
+        margin: 0 0 !important;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* korak 2a - POSLEDNJI KORAK MENIJA */
@@ -259,4 +276,144 @@ p{
     border-radius: 5px;
 }
 
-/* 5. korak -    */
+/* 5. korak - TURE I LOKACIJE    */
+.content-col{
+    width: 40%;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+   padding: 0px;
+   margin: 30px auto;
+}
+.content-col .ctn{
+    margin-left: -100px;
+}
+.image-col{
+width: 60%;
+}
+
+.tours .image-gallery{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: end;
+}
+
+.tours .image-gallery img{
+    width: 40%;
+    height: 30vmin;
+    margin: 10px;
+}
+
+.content-col h1{
+    font-size: 7vmin;
+}
+
+/* 6. korak - KONTAKT FORMA    */
+
+.myForm {
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    background-color: #fc036b91;
+    border-radius: 3px;
+    padding: 1.8em;
+    justify-content: center;
+  }
+  .message {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+   width: 100%;
+  }
+  .contact {
+   	flex: 1; 
+    order: 1;
+   	margin-right: 2em; 
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact h1{
+  font-size: 4vmin;
+  margin-bottom: 15px;
+  }
+  .contact input {
+    width: 100%;
+   
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  .contact button {
+   background: rgb(0, 0, 0);
+   color: white;
+   border: 0;
+  }
+  .contact-data{
+    flex:1;
+    order: 3;
+    margin: 20px 20px;
+  }
+  .contact-data h3{
+    margin: 20px 20px;
+  }
+
+  /*7 korak - FOOTER */
+
+.footer{
+    background-color: #000000;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.footer-content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+    color: whitesmoke;
+}
+.footer-content{
+    margin: 15px 15px;
+}
+.social-col{
+    display: flex;
+    margin: 10px 10px;
+}
+.social-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    
+.social-col img{
+    width: 40px;
+    margin-right: 10px;
+    background-color: #fc036b;
+    padding: 3px;
+    border-radius: 15px;
+}
+.footer-contact-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 15px;
+}
+.footer-contact-data p{
+    color: whitesmoke;
+    padding: 10 px 10px;
+}
+  
+  
